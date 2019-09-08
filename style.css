@@ -2,11 +2,10 @@
 
 /*p {
     color: blue;
-
 }*/
 
 p {
-  color: blue;
+  color: #666666;
     font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -14,6 +13,10 @@ h1 {
     font-family: Georgia, "Times New Roman", serif;
     color:blue;
     text-align: center;
+}
+
+body {
+  background-color: #ebe3c3;
 }
 
 #container{
