@@ -32,7 +32,7 @@ h1 {
     border-bottom: 1px solid #ccc;
 }
 
-#nav a:link. #nav a:visited {
+#nav a:link, #nav a:visited {
     display:block;
     color: #ffffff;
     background-color: #466BB3;
