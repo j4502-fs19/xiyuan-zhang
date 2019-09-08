@@ -52,9 +52,9 @@ body {
 
 .caption {
     color: black;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: 'Manjari', sans-serif;
     font-style: italic;
-    font-size: 0.8em;
+    font-size: 400;
     margin-top: 0;
     text-align: right;
 }
