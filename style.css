@@ -15,6 +15,12 @@ h1 {
     text-align: center;
 }
 
+h2{
+   font-family:  'Manjari', sans-serif;
+   color: black;
+   text-align: center;
+}
+
 body {
   background-color: #ebe3c3;
 }
@@ -52,9 +58,9 @@ body {
 
 .caption {
     color: black;
-    font-family: 'Manjari', sans-serif;
+    font-family: Georgia, "Times New Roman", serif;
     font-style: italic;
-    font-size: 400;
+    font-size: 0.8em;
     margin-top: 0;
     text-align: right;
 }
