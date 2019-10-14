@@ -11,7 +11,7 @@ p {
 
 h1 {
     font-family: 'Days One', sans-serif;
-    color:blue;
+    color:orange;
     text-align: center;
 }
 
@@ -32,7 +32,7 @@ body {
 
 .container {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column;
   align-items: center;
   align-content: flex-end;
   justify-content: space-around;
@@ -47,31 +47,6 @@ body {
   border-radius: 3px;
 }
 
-#nav {
-    padding: 0;
-    list-style-type: none;
-}
-
-#nav li {
-    margin: 0;
-    padding: 0;
-    border-bottom: 1px solid #ccc;
-}
-
-#nav a:link, #nav a:visited {
-    display:block;
-    color: #ffffff;
-    background-color: #466BB3;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    padding: 4px;
-    font-family: Helvetica, Arial, sans-serif;
-}
-
-#nav a:hover, #nav a:active {
-    background-color: #7a991a;
-}
 
 .caption {
     color: black;
@@ -91,4 +66,193 @@ body {
 
 img {
   border: none;
+}
+
+@media screen and (min-width:599px){
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: column;
+}
+
+.authorbox img {
+  /*visibility: hidden;*/
+  display: none;
+}
+
+.pullquote {
+  display: none;
+}
+
+article {
+  margin-bottom: 0.7em;
+  border-bottom: 1px solid #ccc;
+}
+
+article:last-of-type {
+  border-bottom: none;
+}
+
+@media screen and (min-width: 450px) {
+
+    nav ul {
+        flex-flow: row;
+        justify-content: space-between;
+    }
+
+}
+
+@media screen and (min-width: 600px) {
+
+    #container {
+        width: 80%;
+    }
+
+    .authorbox img {
+      display: block;
+      width: 100%;
+      margin-top: 0.5em;
+    }
+
+    .authorbox {
+      width: 25%;
+      max-width: 200px;
+      float: left;
+      margin-right: 20px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .item1 {
+      margin-right: auto;
+    }
+
+    nav ul li {
+      margin: 5px;
+    }
+
+    .pullquote {
+      display: block;
+    }
+
+}
+
+@media screen and (min-width:1000px) {
+  article {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-gap: 30px;
+    grid-template-areas:
+        "a b b"
+        "c c e"
+        ". d d";
+  }
+
+  .authorbox {
+    width: 100%;
+    grid-area: a;
+  }
+
+  .section1 {
+    grid-area: b;
+  }
+
+  .image {
+    grid-area: c;
+  }
+
+  .section2 {
+    grid-area: d;
+  }
+
+  .pullquote {
+    margin-top: 0;
+    grid-area: c;
+  }
+
+  .section1 p:first-of-type, .section2 p:first-of-type {
+    margin-top: 0;
+  }
+
+}
+
+@media screen and (min-width:1200px) {
+  article {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr 1fr;
+    grid-gap: 30px;
+    grid-template-areas:
+        "a b b e"
+        "c c c ."
+        ". d d .";
+  }
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    line-height: 1.45em;
+}
+
+#container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+aside p {
+    font-size: 0.8em;
+    line-height: 1.2em;
+}
+
+.caption {
+    font-size: 0.7em;
+    text-align: right;
+    margin-top: 0;
+    font-style: italic;
+}
+
+.byline {
+    font-family: "Merriweather Sans", Helvetica, Arial, sans-serif;
+    font-size: 0.7em;
+    margin-top: 0.5em;
+    margin-bottom: 0;
+    line-height: normal;
+}
+
+.dateline {
+    font-family: "Merriweather Sans", Helvetica, Arial, sans-serif;
+    font-size: 0.7em;
+    color: #aaa;
+    margin: 0;
+    line-height: normal;
+}
+
+.pullquote {
+  font-family: "Merriweather Sans", Helvetica, Arial, sans-serif;
+  font-size: 1.25em;
+  font-style: italic;
+  line-height: 1.25;
+}
+
+
+.title {
+    margin-top: 1.5em;
+    margin-bottom: 0.7em;
+    border-bottom: 1px solid #ccc;
 }
