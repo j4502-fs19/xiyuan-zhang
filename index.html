@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css?family=Manjari:700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="tab.js" type="text/javascript"></script>
       <!-- <style type="text/css">
           body {background-color:yellow;}
       </style> -->
@@ -21,14 +23,17 @@
        <h1>Xiyuan's website</h1>
        <h2>I invented a new word! Plagiarism!</h2>
        <p>Contact: xz5r3@mail.missouri.edu</p>
-       <div class="container">
-             <div class="item-1 item"><a href="oldindex.html">Home</a></div>
-             <div class="item-2 item">Artwork</div>
-             <div class="item-3 item">Article</div>
-             <div class="item-4 item">My Design</div>
-             <div class="item-5 item">School</div>
-             <div class="item-5 item">Record</div>
-        </div>
+       <nav>
+           <a class="menu-trigger" href="#">&#9776;</a>
+         <ul>
+             <li><a href="oldindex.html">Home</a></li>
+             <li><a href="#">Artwork</li>
+             <li><a href="#">Article</li>
+             <li><a href="#">My Design</li>
+             <li><a href="#">School</li>
+             <li><a href="#">Record</li>
+        </ul>
+      </nav>
           <ol>
             <li><a href="https:zhangxiyuan2015.myportfolio.com" target="_blank">portfolio</a>.</li>
             <li>Experience</li>
@@ -47,7 +52,7 @@
 
     		 	<h3>Article example</h3>
           <article>
-    			<header class="authorbox">
+    		<header class="authorbox">
     				<p class="byline">By Xiyuan Zhang</p>
     				<p class="dateline">Columbia Missourian. Dec. 26.</p>
             <img src="Article.jpg" alt="A photo of Violet Vonder Haar" />
